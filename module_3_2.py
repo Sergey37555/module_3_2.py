@@ -1,4 +1,4 @@
-def send_email(message, recipient, sender = "university.help@gmail.com"):
+def send_email(message, recipient,*, sender = "university.help@gmail.com"):
     corr_recipient = '@' in recipient and (recipient.endswith('.com')
     or recipient.endswith('.ru')
     or recipient.endswith('.net'))
